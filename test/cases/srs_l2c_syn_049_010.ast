@@ -1,0 +1,40 @@
+TopLevel(
+	main(fillred_test4),
+	program
+	(
+		node
+		(
+			node,
+			fillred_test4,
+			params(var_decls(vars(Input1),array(bool,INT(10 ))),var_decls(vars(Input2),array(bool,INT(10 )))),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(var_decls(vars(_L1),bool),var_decls(vars(_L2),bool),var_decls(vars(_L3),array(bool,INT(10 ))),var_decls(vars(_L4),array(bool,INT(10 )))),
+				=(lvalue(ID(_L1,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix(mul_sum,param_types(bool,bool,bool),ret_types(bool)),INT(10 )),list_expr(ID(_L2,bool,()),ID(_L3,array(bool,INT(10 )),()),ID(_L4,array(bool,INT(10 )),()))))
+,				=(lvalue(ID(_L2,bool,())),BOOL(true))
+,				=(lvalue(ID(_L3,array(bool,INT(10 )),())),ID(Input1,array(bool,INT(10 )),()))
+,				=(lvalue(ID(Output1,bool,())),ID(_L1,bool,()))
+,				=(lvalue(ID(_L4,array(bool,INT(10 )),())),ID(Input2,array(bool,INT(10 )),()))
+			)
+		)
+,
+		node
+		(
+			function,
+			mul_sum,
+			params(var_decls(vars(Input1),bool),var_decls(vars(Input2),bool),var_decls(vars(Input3),bool)),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(var_decls(vars(_L1),bool),var_decls(vars(_L2),bool),var_decls(vars(_L3),bool),var_decls(vars(_L4),bool)),
+				=(lvalue(ID(_L1,bool,())),ID(Input1,bool,()))
+,				=(lvalue(ID(_L2,bool,())),ID(Input2,bool,()))
+,				=(lvalue(ID(_L3,bool,())),ID(Input3,bool,()))
+,				=(lvalue(ID(Output1,bool,())),ID(_L4,bool,()))
+,				=(lvalue(ID(_L4,bool,())),binop_and(bool,(),binop_and(bool,(),ID(_L1,bool,()),ID(_L2,bool,())),ID(_L3,bool,())))
+			)
+		)
+
+	)
+)

@@ -1,0 +1,22 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(var1),int),var_decls(vars(var2),uint),var_decls(vars(var3),short),var_decls(vars(var4),ushort)),
+			returns(var_decls(vars(y1),int),var_decls(vars(y2),uint),var_decls(vars(y3),short),var_decls(vars(y4),ushort)),
+			body
+			(
+				=(lvalue(ID(y1,int,())),binop_mod(int,(),ID(var1,int,()),INT(1)))
+,
+				=(lvalue(ID(y2,uint,())),binop_mod(uint,(),ID(var2,uint,()),UINT(2)))
+,				=(lvalue(ID(y3,short,())),binop_mod(short,(),ID(var3,short,()),SHORT(4)))
+,				=(lvalue(ID(y4,ushort,())),binop_mod(ushort,(),ID(var4,ushort,()),USHORT(5)))
+			)
+		)
+
+	)
+)

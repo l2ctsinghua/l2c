@@ -1,0 +1,25 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int),
+			type(myStruct,construct(field(Field1,int),field(Field2,bool)))
+		),
+		node
+		(
+			node,
+			Node1,
+			params(var_decls(vars(var1),typename(myInt)),var_decls(vars(var2),bool),var_decls(vars(var3),real),var_decls(vars(var4),char),var_decls(vars(var5),typename(myStruct))),
+			returns(var_decls(vars(output1),typename(myInt)),var_decls(vars(output2),bool),var_decls(vars(output3),real),var_decls(vars(output4),char),var_decls(vars(output5),typename(myStruct))),
+			body
+			(
+				=(lvalue(ID(output1,int,())),tempo_fby((int),(()),list_expr(ID(var1,int,())),INT(2),list_expr(INT(10))))
+,
+				=(lvalue(ID(output2,bool,()),ID(output3,real,()),ID(output4,char,()),ID(output5,construct(field(Field1,int),field(Field2,bool)),())),tempo_fby((bool,real,char,construct(field(Field1,int),field(Field2,bool))),((),(),(),()),list_expr(ID(var2,bool,()),ID(var3,real,()),ID(var4,char,()),construct(construct(field(Field1,int),field(Field2,bool)),(),label_expr(Field1,INT(120)),label_expr(Field2,BOOL(true)),)),INT(2),list_expr(BOOL(false),REAL(12.03),CHAR(98),ID(var5,construct(field(Field1,int),field(Field2,bool)),()))))
+			)
+		)
+
+	)
+)

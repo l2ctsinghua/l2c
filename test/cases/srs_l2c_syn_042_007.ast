@@ -1,0 +1,30 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(Input1),array(int,INT(3 ))),var_decls(vars(Input2),int)),
+			returns(var_decls(vars(Output1),int),var_decls(vars(Output2),int),var_decls(vars(Output3),array(int,INT(2 )))),
+			body
+			(
+				localvars(var_decls(vars(_L1),int),var_decls(vars(_L2),int),var_decls(vars(_L3),int),var_decls(vars(_L4),array(int,INT(3 ))),var_decls(vars(_L5),int),var_decls(vars(_L6),array(int,INT(3 ))),var_decls(vars(_L7),array(array(int,INT(2 )),INT(6 ))),var_decls(vars(_L8),int),var_decls(vars(_L10),array(int,INT(2 )))),
+				=(lvalue(ID(_L1,int,())),binop_add(int,(),ID(_L2,int,()),ID(_L3,int,())))
+,				=(lvalue(ID(_L2,int,())),dynamic_project(int,(),ID(_L4,array(int,INT(3 )),()),(binop_add(int,(),ID(_L5,int,()),INT(12))),INT(0)))
+,				=(lvalue(ID(_L3,int,())),dynamic_project(int,(),ID(_L6,array(int,INT(3 )),()),(ID(_L5,int,())),INT(100)))
+,				=(lvalue(ID(_L4,array(int,INT(3 )),())),ID(Input1,array(int,INT(3 )),()))
+,				=(lvalue(ID(_L5,int,())),ID(Input2,int,()))
+,				=(lvalue(ID(_L6,array(int,INT(3 )),())),construct_array(array(int,INT(3 )),(),list_expr(INT(11),INT(12),INT(13))))
+,				=(lvalue(ID(Output1,int,())),ID(_L1,int,()))
+,				=(lvalue(ID(_L7,array(array(int,INT(2 )),INT(6 )),())),array_dim((array(array(int,INT(2 )),INT(6 ))),(()),array_dim((array(int,INT(2 ))),(()),INT(4),INT(2)),INT(6)))
+,				=(lvalue(ID(_L8,int,())),dynamic_project(int,(),ID(_L7,array(array(int,INT(2 )),INT(6 )),()),(binop_multiply(int,(),INT(9),INT(2)),INT(1)),INT(200)))
+,				=(lvalue(ID(Output2,int,())),ID(_L8,int,()))
+,				=(lvalue(ID(_L10,array(int,INT(2 )),())),dynamic_project(array(int,INT(2 )),(),ID(_L7,array(array(int,INT(2 )),INT(6 )),()),(INT(5)),array_dim((array(int,INT(2 ))),(()),INT(13),INT(2))))
+,				=(lvalue(ID(Output3,array(int,INT(2 )),())),ID(_L10,array(int,INT(2 )),()))
+			)
+		)
+
+	)
+)

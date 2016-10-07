@@ -1,0 +1,20 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params( ),
+			returns(var_decls(vars(Output1),construct(field(label,construct(field(label,int)))))),
+			body
+			(
+				localvars(var_decls(vars(_L1),construct(field(label,construct(field(label,int)))))),
+				=(lvalue(ID(_L1,construct(field(label,construct(field(label,int)))),())),construct(construct(field(label,construct(field(label,int)))),(),label_expr(label,construct(construct(field(label,int)),(),label_expr(label,INT(0)),)),))
+,				=(lvalue(ID(Output1,construct(field(label,construct(field(label,int)))),())),ID(_L1,construct(field(label,construct(field(label,int)))),()))
+			)
+		)
+
+	)
+)

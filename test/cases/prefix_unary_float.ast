@@ -1,0 +1,20 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(x1),int)),
+			returns(var_decls(vars(y1,y2),float)),
+			body
+			(
+				=(lvalue(ID(y1,float,())),apply_expr((float),(()),prefix(float$),list_expr(ID(x1,int,()))))
+,
+				=(lvalue(ID(y2,float,())),apply_expr((float),(()),prefix(float$),list_expr(REAL(2.5))))
+			)
+		)
+
+	)
+)

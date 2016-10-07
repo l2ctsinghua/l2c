@@ -1,0 +1,26 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			node,
+			Node1,
+			params(var_decls(vars(var1),typename(myInt))),
+			returns(var_decls(vars(output1),typename(myInt)),var_decls(vars(output2),int),var_decls(vars(output3),int),var_decls(vars(output4),real)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),apply_expr((int),(()),prefix(-$),list_expr(ID(var1,int,()))))
+,
+				=(lvalue(ID(output2,int,())),apply_expr((int),(()),prefix(+$),list_expr(ID(var1,int,()))))
+,				=(lvalue(ID(output3,int,())),apply_expr((int),(()),prefix(int$),list_expr(REAL(203.23))))
+,				=(lvalue(ID(output4,real,())),apply_expr((real),(()),prefix(real$),list_expr(INT(23))))
+			)
+		)
+
+	)
+)

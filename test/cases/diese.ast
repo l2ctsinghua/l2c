@@ -1,0 +1,23 @@
+TopLevel(
+	main(Operator11),
+	program
+	(
+		type_block
+		(
+			type(tyArray1,array(bool,INT(10 )))
+		),
+		node
+		(
+			node,
+			Operator11,
+			params(var_decls(vars(Input1),typename(tyArray1))),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(),
+				=(lvalue(ID(Output1,bool,())),diese(array(bool,INT(10 )),(),ID(Input1,array(bool,INT(10 )),())))
+			)
+		)
+
+	)
+)

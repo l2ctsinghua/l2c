@@ -1,0 +1,42 @@
+TopLevel(
+	main(Operator1),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		type_block
+		(
+			type(Type1,construct(field(label1,int),field(label2,real)))
+		),
+		node
+		(
+			function,
+			Operator1,
+			params(var_decls(vars(Input1),typename(Type1)),var_decls(vars(Input2),int)),
+			returns(var_decls(vars(Output1),typename(Type1))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(Type1)),var_decls(vars(_L2),typename(Type1)),var_decls(vars(_L3),int)),
+				=(lvalue(ID(_L1,construct(field(label1,int),field(label2,real)),())),mixed_constructor(construct(field(label1,int),field(label2,real)),(),ID(_L2,construct(field(label1,int),field(label2,real)),()),(struct_item(label1)),ID(_L3,int,())))
+,				=(lvalue(ID(_L2,construct(field(label1,int),field(label2,real)),())),ID(Input1,construct(field(label1,int),field(label2,real)),()))
+,				=(lvalue(ID(_L3,int,())),ID(Input2,int,()))
+,				=(lvalue(ID(Output1,construct(field(label1,int),field(label2,real)),())),ID(_L1,construct(field(label1,int),field(label2,real)),()))
+			)
+		)
+
+	)
+)

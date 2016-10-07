@@ -1,0 +1,21 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		node
+		(
+			function,
+			Node1,
+			params(var_decls(vars(var1),bool)),
+			returns(var_decls(vars(output1),bool),var_decls(vars(output2),bool),var_decls(vars(output3),bool)),
+			body
+			(
+				=(lvalue(ID(output1,bool,())),binop_and(bool,(),ID(var1,bool,()),BOOL(true)))
+,
+				=(lvalue(ID(output2,bool,())),binop_or(bool,(),ID(var1,bool,()),BOOL(false)))
+,				=(lvalue(ID(output3,bool,())),binop_xor(bool,(),ID(var1,bool,()),BOOL(false)))
+			)
+		)
+
+	)
+)

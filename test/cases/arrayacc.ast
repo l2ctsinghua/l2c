@@ -1,0 +1,49 @@
+TopLevel(
+	main(Operator1),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		type_block
+		(
+			type(Type1,array(int,INT(5 )))
+		),
+		type_block
+		(
+			type(OS,construct(field(info1,typename(device_signal)),field(info2,typename(device_signal)),field(info3,typename(device_signal)),field(info4,typename(device_signal)),field(info5,typename(device_signal))))
+		),
+		const_block
+		(
+			const(OS_0,typename(OS),construct(label_const(info1,construct(label_const(msgCod1,INT(0)),label_const(msgCod2,INT(0)))),label_const(info2,construct(label_const(msgCod1,INT(0)),label_const(msgCod2,INT(0)))),label_const(info3,construct(label_const(msgCod1,INT(0)),label_const(msgCod2,INT(0)))),label_const(info4,construct(label_const(msgCod1,INT(0)),label_const(msgCod2,INT(0)))),label_const(info5,construct(label_const(msgCod1,INT(0)),label_const(msgCod2,INT(0))))))
+		),
+		node
+		(
+			function,
+			Operator1,
+			params(var_decls(vars(Input1),typename(Type1))),
+			returns(var_decls(vars(Output1),int)),
+			body
+			(
+				localvars(var_decls(vars(_L1),int),var_decls(vars(_L2),typename(Type1))),
+				=(lvalue(ID(_L1,int,())),array_index(int,(),ID(_L2,array(int,INT(5 )),()),INT(2 )))
+,				=(lvalue(ID(_L2,array(int,INT(5 )),())),ID(Input1,array(int,INT(5 )),()))
+,				=(lvalue(ID(Output1,int,())),ID(_L1,int,()))
+			)
+		)
+
+	)
+)

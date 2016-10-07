@@ -1,0 +1,520 @@
+DIGEST a351367ad62e0ff14be849e54ddb5e00
+FIteration
+R1092:1097 Axioms <> <> lib
+R1115:1120 Coqlib <> <> lib
+R1138:1144 Wfsimpl <> <> lib
+mod 1801:1806 <> WfIter
+sec 1818:1826 WfIter ITERATION
+var 1840:1840 WfIter.ITERATION A
+var 1842:1842 WfIter.ITERATION B
+var 1860:1863 WfIter.ITERATION step
+R1872:1874 Coq.Init.Datatypes <> :type_scope:x_'+'_x not
+R1871:1871 Iteration <> WfIter.ITERATION.B var
+R1875:1875 Iteration <> WfIter.ITERATION.A var
+R1866:1866 Iteration <> WfIter.ITERATION.A var
+var 1887:1889 WfIter.ITERATION ord
+R1897:1897 Iteration <> WfIter.ITERATION.A var
+R1892:1892 Iteration <> WfIter.ITERATION.A var
+var 1919:1924 WfIter.ITERATION ord_wf
+R1927:1938 Coq.Init.Wf <> well_founded def
+R1940:1942 Iteration <> WfIter.ITERATION.ord var
+var 1956:1964 WfIter.ITERATION step_decr
+R2001:2003 Iteration <> WfIter.ITERATION.ord var
+R2008:2008 Iteration <> a var
+R2005:2006 Iteration <> a' var
+R1986:1988 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1980:1983 Iteration <> WfIter.ITERATION.step var
+R1985:1985 Iteration <> a var
+R1989:1991 Coq.Init.Datatypes <> inr constr
+R1995:1996 Iteration <> a' var
+def 2023:2031 WfIter step_info
+R2037:2037 Iteration <> WfIter.ITERATION.A var
+R2064:2066 Coq.Init.Datatypes <> :type_scope:x_'+'_x not
+R2042:2042 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'}' not
+R2044:2046 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'}' not
+R2063:2063 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'}' not
+R2053:2055 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2047:2050 Iteration <> WfIter.ITERATION.step var
+R2052:2052 Iteration <> a var
+R2056:2058 Coq.Init.Datatypes <> inl constr
+R2067:2067 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'&'_x_'}' not
+R2070:2072 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'&'_x_'}' not
+R2090:2092 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'&'_x_'}' not
+R2101:2101 Coq.Init.Specif <> :type_scope:'{'_x_'|'_x_'&'_x_'}' not
+R2079:2081 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2073:2076 Iteration <> WfIter.ITERATION.step var
+R2078:2078 Iteration <> a var
+R2082:2084 Coq.Init.Datatypes <> inr constr
+R2093:2095 Iteration <> WfIter.ITERATION.ord var
+R2100:2100 Iteration <> a var
+R2121:2124 Iteration <> WfIter.ITERATION.step var
+R2121:2124 Iteration <> WfIter.ITERATION.step var
+def 2206:2214 WfIter iterate_F
+R2220:2220 Iteration <> WfIter.ITERATION.A var
+R2252:2252 Iteration <> WfIter.ITERATION.B var
+R2240:2242 Iteration <> WfIter.ITERATION.ord var
+R2247:2247 Iteration <> a var
+R2244:2245 Iteration <> a' var
+R2257:2257 Iteration <> WfIter.ITERATION.B var
+R2270:2278 Iteration WfIter step_info def
+R2280:2280 Iteration <> a var
+R2291:2293 Coq.Init.Datatypes <> inl constr
+R2296:2300 Coq.Init.Specif <> exist constr
+R2316:2318 Coq.Init.Datatypes <> inr constr
+R2321:2326 Coq.Init.Specif <> exist2 constr
+R2339:2341 Iteration <> rec var
+def 2367:2373 WfIter iterate
+R2379:2379 Iteration <> WfIter.ITERATION.A var
+R2384:2384 Iteration <> WfIter.ITERATION.B var
+R2389:2391 Wfsimpl <> Fix def
+R2410:2410 Iteration <> a var
+R2400:2408 Iteration WfIter iterate_F def
+R2393:2398 Iteration <> WfIter.ITERATION.ord_wf var
+var 2536:2536 WfIter.ITERATION P
+R2539:2539 Iteration <> WfIter.ITERATION.A var
+var 2559:2559 WfIter.ITERATION Q
+R2562:2562 Iteration <> WfIter.ITERATION.B var
+var 2585:2593 WfIter.ITERATION step_prop
+R2609:2609 Iteration <> WfIter.ITERATION.A var
+R2627:2630 Iteration <> WfIter.ITERATION.step var
+R2632:2632 Iteration <> a var
+R2639:2641 Coq.Init.Datatypes <> inl constr
+R2648:2648 Iteration <> WfIter.ITERATION.Q var
+R2654:2656 Coq.Init.Datatypes <> inr constr
+R2664:2664 Iteration <> WfIter.ITERATION.P var
+R2612:2612 Iteration <> WfIter.ITERATION.P var
+R2614:2614 Iteration <> a var
+prf 2681:2692 WfIter iterate_prop
+R2714:2714 Iteration <> WfIter.ITERATION.Q var
+R2717:2723 Iteration WfIter iterate def
+R2725:2725 Iteration <> a var
+R2707:2707 Iteration <> WfIter.ITERATION.P var
+R2709:2709 Iteration <> a var
+R2795:2797 Iteration <> WfIter.ITERATION.ord var
+R2767:2782 Coq.Init.Wf <> well_founded_ind thm
+R2795:2797 Iteration <> WfIter.ITERATION.ord var
+R2767:2782 Coq.Init.Wf <> well_founded_ind thm
+R2824:2830 Iteration WfIter iterate def
+R2841:2850 Wfsimpl <> unroll_Fix thm
+R2841:2850 Wfsimpl <> unroll_Fix thm
+R2860:2868 Iteration WfIter iterate_F def
+R2884:2892 Iteration WfIter step_info def
+R2884:2892 Iteration WfIter step_info def
+R2931:2939 Iteration <> WfIter.ITERATION.step_prop var
+R2991:2999 Iteration <> WfIter.ITERATION.step_prop var
+R3037:3045 Iteration WfIter.ITERATION <> sec
+R3053:3058 Iteration WfIter <> mod
+mod 4322:4329 <> PrimIter
+sec 4341:4349 PrimIter ITERATION
+var 4363:4363 PrimIter.ITERATION A
+var 4365:4365 PrimIter.ITERATION B
+var 4383:4386 PrimIter.ITERATION step
+R4395:4397 Coq.Init.Datatypes <> :type_scope:x_'+'_x not
+R4394:4394 Iteration <> PrimIter.ITERATION.B var
+R4398:4398 Iteration <> PrimIter.ITERATION.A var
+R4389:4389 Iteration <> PrimIter.ITERATION.A var
+def 4413:4426 PrimIter num_iterations
+def 5273:5281 PrimIter iter_step
+R5287:5294 Coq.Numbers.BinNums <> positive ind
+R5351:5356 Coq.Init.Datatypes <> option ind
+R5358:5358 Iteration <> PrimIter.ITERATION.B var
+R5346:5346 Iteration <> PrimIter.ITERATION.A var
+R5335:5337 Coqlib <> Plt def
+R5341:5341 Iteration <> x var
+R5339:5339 Iteration <> y var
+R5386:5386 Iteration <> PrimIter.ITERATION.A var
+R5391:5396 Coq.Init.Datatypes <> option ind
+R5398:5398 Iteration <> PrimIter.ITERATION.B var
+R5411:5413 Coqlib <> peq def
+R5417:5418 Coq.Numbers.BinNums <> xH constr
+R5415:5415 Iteration <> x var
+R5429:5432 Coq.Init.Specif <> left constr
+R5440:5443 Coq.Init.Datatypes <> None constr
+R5449:5453 Coq.Init.Specif <> right constr
+R5476:5479 Iteration <> PrimIter.ITERATION.step var
+R5481:5481 Iteration <> s var
+R5496:5498 Coq.Init.Datatypes <> inl constr
+R5507:5510 Coq.Init.Datatypes <> Some constr
+R5524:5526 Coq.Init.Datatypes <> inr constr
+R5535:5538 Iteration <> next var
+R5551:5559 Coqlib <> Ppred_Plt thm
+R5561:5561 Iteration <> x var
+R5541:5545 Coq.PArith.BinPos <> Ppred syndef
+R5547:5547 Iteration <> x var
+def 5602:5605 PrimIter iter
+R5625:5630 Coq.Init.Datatypes <> option ind
+R5632:5632 Iteration <> PrimIter.ITERATION.B var
+R5620:5620 Iteration <> PrimIter.ITERATION.A var
+R5608:5615 Coq.Numbers.BinNums <> positive ind
+R5637:5639 Wfsimpl <> Fix def
+R5648:5656 Iteration PrimIter iter_step def
+R5641:5646 Coqlib <> Plt_wf thm
+def 5768:5774 PrimIter iterate
+R5779:5782 Iteration PrimIter iter def
+R5784:5797 Iteration PrimIter num_iterations def
+var 5871:5871 PrimIter.ITERATION P
+R5874:5874 Iteration <> PrimIter.ITERATION.A var
+var 5894:5894 PrimIter.ITERATION Q
+R5897:5897 Iteration <> PrimIter.ITERATION.B var
+var 5920:5928 PrimIter.ITERATION step_prop
+R5944:5944 Iteration <> PrimIter.ITERATION.A var
+R5962:5965 Iteration <> PrimIter.ITERATION.step var
+R5967:5967 Iteration <> a var
+R5974:5976 Coq.Init.Datatypes <> inl constr
+R5983:5983 Iteration <> PrimIter.ITERATION.Q var
+R5989:5991 Coq.Init.Datatypes <> inr constr
+R5999:5999 Iteration <> PrimIter.ITERATION.P var
+R5947:5947 Iteration <> PrimIter.ITERATION.P var
+R5949:5949 Iteration <> a var
+prf 6016:6024 PrimIter iter_prop
+R6071:6071 Iteration <> PrimIter.ITERATION.Q var
+R6073:6073 Iteration <> b var
+R6058:6060 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6050:6053 Iteration PrimIter iter def
+R6057:6057 Iteration <> a var
+R6055:6055 Iteration <> n var
+R6061:6064 Coq.Init.Datatypes <> Some constr
+R6066:6066 Iteration <> b var
+R6043:6043 Iteration <> PrimIter.ITERATION.P var
+R6045:6045 Iteration <> a var
+R6092:6107 Coq.Init.Wf <> well_founded_ind thm
+R6176:6176 Iteration <> PrimIter.ITERATION.Q var
+R6178:6178 Iteration <> b var
+R6163:6165 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6155:6158 Iteration PrimIter iter def
+R6162:6162 Iteration <> a var
+R6160:6160 Iteration <> p var
+R6166:6169 Coq.Init.Datatypes <> Some constr
+R6171:6171 Iteration <> b var
+R6148:6148 Iteration <> PrimIter.ITERATION.P var
+R6150:6150 Iteration <> a var
+R6109:6114 Coqlib <> Plt_wf thm
+R6092:6107 Coq.Init.Wf <> well_founded_ind thm
+R6176:6176 Iteration <> PrimIter.ITERATION.Q var
+R6178:6178 Iteration <> b var
+R6163:6165 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6155:6158 Iteration PrimIter iter def
+R6162:6162 Iteration <> a var
+R6160:6160 Iteration <> p var
+R6166:6169 Coq.Init.Datatypes <> Some constr
+R6171:6171 Iteration <> b var
+R6148:6148 Iteration <> PrimIter.ITERATION.P var
+R6150:6150 Iteration <> a var
+R6109:6114 Coqlib <> Plt_wf thm
+R6200:6203 Iteration PrimIter iter def
+R6220:6229 Wfsimpl <> unroll_Fix thm
+R6220:6229 Wfsimpl <> unroll_Fix thm
+R6245:6253 Iteration PrimIter iter_step def
+R6274:6276 Coqlib <> peq def
+R6274:6276 Coqlib <> peq def
+R6312:6320 Iteration <> PrimIter.ITERATION.step_prop var
+R6312:6320 Iteration <> PrimIter.ITERATION.step_prop var
+R6342:6345 Iteration <> PrimIter.ITERATION.step var
+R6342:6345 Iteration <> PrimIter.ITERATION.step var
+R6400:6404 Coq.PArith.BinPos <> Ppred syndef
+R6400:6404 Coq.PArith.BinPos <> Ppred syndef
+R6419:6427 Coqlib <> Ppred_Plt thm
+R6419:6427 Coqlib <> Ppred_Plt thm
+prf 6460:6471 PrimIter iterate_prop
+R6517:6517 Iteration <> PrimIter.ITERATION.Q var
+R6519:6519 Iteration <> b var
+R6510:6510 Iteration <> PrimIter.ITERATION.P var
+R6512:6512 Iteration <> a var
+R6497:6499 Coq.Init.Logic <> :type_scope:x_'='_x not
+R6488:6494 Iteration PrimIter iterate def
+R6496:6496 Iteration <> a var
+R6500:6503 Coq.Init.Datatypes <> Some constr
+R6505:6505 Iteration <> b var
+R6560:6573 Iteration PrimIter num_iterations def
+R6545:6553 Iteration PrimIter iter_prop thm
+R6560:6573 Iteration PrimIter num_iterations def
+R6545:6553 Iteration PrimIter iter_prop thm
+R6600:6608 Iteration PrimIter.ITERATION <> sec
+R6616:6623 Iteration PrimIter <> mod
+R7046:7054 Coq.Logic.Classical <> <> lib
+R7072:7091 Coq.Logic.ClassicalDescription <> <> lib
+R7109:7111 Coq.Arith.Max <> <> lib
+mod 7122:7128 <> GenIter
+sec 7140:7148 GenIter ITERATION
+var 7162:7162 GenIter.ITERATION A
+var 7164:7164 GenIter.ITERATION B
+var 7182:7185 GenIter.ITERATION step
+R7194:7196 Coq.Init.Datatypes <> :type_scope:x_'+'_x not
+R7193:7193 Iteration <> GenIter.ITERATION.B var
+R7197:7197 Iteration <> GenIter.ITERATION.A var
+R7188:7188 Iteration <> GenIter.ITERATION.A var
+def 7212:7215 GenIter B_le
+R7223:7228 Coq.Init.Datatypes <> option ind
+R7230:7230 Iteration <> GenIter.ITERATION.B var
+R7251:7254 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R7244:7246 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7243:7243 Iteration <> x var
+R7247:7250 Coq.Init.Datatypes <> None constr
+R7256:7258 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7255:7255 Iteration <> y var
+R7259:7259 Iteration <> x var
+def 7273:7276 GenIter F_le
+R7289:7294 Coq.Init.Datatypes <> option ind
+R7296:7296 Iteration <> GenIter.ITERATION.B var
+R7284:7284 Iteration <> GenIter.ITERATION.A var
+R7319:7322 Iteration GenIter B_le def
+R7331:7331 Iteration <> y var
+R7333:7333 Iteration <> a var
+R7325:7325 Iteration <> x var
+R7327:7327 Iteration <> a var
+def 7349:7354 GenIter F_iter
+R7368:7373 Coq.Init.Datatypes <> option ind
+R7375:7375 Iteration <> GenIter.ITERATION.B var
+R7363:7363 Iteration <> GenIter.ITERATION.A var
+R7382:7382 Iteration <> GenIter.ITERATION.A var
+R7387:7392 Coq.Init.Datatypes <> option ind
+R7394:7394 Iteration <> GenIter.ITERATION.B var
+R7407:7410 Iteration <> GenIter.ITERATION.step var
+R7412:7412 Iteration <> a var
+R7423:7425 Coq.Init.Datatypes <> inl constr
+R7432:7435 Coq.Init.Datatypes <> Some constr
+R7443:7445 Coq.Init.Datatypes <> inr constr
+R7453:7456 Iteration <> next var
+prf 7475:7486 GenIter F_iter_monot
+R7514:7517 Iteration GenIter F_le def
+R7531:7536 Iteration GenIter F_iter def
+R7538:7538 Iteration <> g var
+R7520:7525 Iteration GenIter F_iter def
+R7527:7527 Iteration <> f var
+R7502:7505 Iteration GenIter F_le def
+R7509:7509 Iteration <> g var
+R7507:7507 Iteration <> f var
+R7579:7584 Iteration GenIter F_iter def
+R7600:7603 Iteration <> GenIter.ITERATION.step var
+R7600:7603 Iteration <> GenIter.ITERATION.step var
+def 7657:7660 GenIter iter
+R7666:7668 Coq.Init.Datatypes <> nat ind
+R7678:7683 Coq.Init.Datatypes <> option ind
+R7685:7685 Iteration <> GenIter.ITERATION.B var
+R7673:7673 Iteration <> GenIter.ITERATION.A var
+R7698:7698 Iteration <> n var
+R7709:7709 Coq.Init.Datatypes <> O constr
+R7724:7727 Coq.Init.Datatypes <> None constr
+R7734:7734 Coq.Init.Datatypes <> S constr
+R7741:7746 Iteration GenIter F_iter def
+R7749:7752 Iteration <> iter def
+prf 7771:7780 GenIter iter_monot
+R7813:7816 Iteration GenIter F_le def
+R7828:7831 Iteration GenIter iter def
+R7833:7833 Iteration <> q var
+R7819:7822 Iteration GenIter iter def
+R7824:7824 Iteration <> p var
+R7799:7802 Coq.Init.Peano <> :nat_scope:x_'<='_x not
+R7798:7798 Iteration <> p var
+R7803:7803 Iteration <> q var
+R7924:7928 Coq.Init.Logic <> False ind
+R7924:7928 Coq.Init.Logic <> False ind
+R7954:7965 Iteration GenIter F_iter_monot thm
+R7954:7965 Iteration GenIter F_iter_monot thm
+prf 7998:8008 GenIter iter_either
+R8025:8025 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R8063:8070 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R8096:8096 Coq.Init.Logic <> :type_scope:x_'\/'_x not
+R8026:8032 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8034:8035 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8036:8042 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8044:8045 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8054:8056 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8046:8049 Iteration GenIter iter def
+R8053:8053 Iteration <> a var
+R8051:8051 Iteration <> n var
+R8057:8060 Coq.Init.Datatypes <> Some constr
+R8062:8062 Iteration <> b var
+R8089:8091 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8081:8084 Iteration GenIter iter def
+R8088:8088 Iteration <> a var
+R8086:8086 Iteration <> n var
+R8092:8095 Coq.Init.Datatypes <> None constr
+R8123:8129 Coq.Logic.Classical_Prop <> classic prfax
+R8150:8152 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8142:8145 Iteration GenIter iter def
+R8147:8147 Iteration <> n var
+R8153:8156 Coq.Init.Datatypes <> None constr
+R8123:8129 Coq.Logic.Classical_Prop <> classic prfax
+R8150:8152 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8142:8145 Iteration GenIter iter def
+R8147:8147 Iteration <> n var
+R8153:8156 Coq.Init.Datatypes <> None constr
+R8209:8222 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R8246:8248 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8238:8241 Iteration GenIter iter def
+R8243:8243 Iteration <> n var
+R8249:8252 Coq.Init.Datatypes <> None constr
+R8224:8226 Coq.Init.Datatypes <> nat ind
+R8209:8222 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R8246:8248 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8238:8241 Iteration GenIter iter def
+R8243:8243 Iteration <> n var
+R8249:8252 Coq.Init.Datatypes <> None constr
+R8224:8226 Coq.Init.Datatypes <> nat ind
+R8308:8311 Iteration GenIter iter def
+R8308:8311 Iteration GenIter iter def
+def 8372:8383 GenIter converges_to
+R8389:8389 Iteration <> GenIter.ITERATION.A var
+R8396:8401 Coq.Init.Datatypes <> option ind
+R8403:8403 Iteration <> GenIter.ITERATION.B var
+R8418:8424 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8426:8427 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8462:8464 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8454:8457 Iteration GenIter iter def
+R8461:8461 Iteration <> a var
+R8459:8459 Iteration <> m var
+R8465:8465 Iteration <> b var
+R8440:8443 Coq.Init.Peano <> :nat_scope:x_'<='_x not
+R8439:8439 Iteration <> n var
+R8444:8444 Iteration <> m var
+prf 8475:8491 GenIter converges_to_Some
+R8531:8542 Iteration GenIter converges_to def
+R8547:8550 Coq.Init.Datatypes <> Some constr
+R8552:8552 Iteration <> b var
+R8544:8544 Iteration <> a var
+R8518:8520 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8510:8513 Iteration GenIter iter def
+R8517:8517 Iteration <> a var
+R8515:8515 Iteration <> n var
+R8521:8524 Coq.Init.Datatypes <> Some constr
+R8526:8526 Iteration <> b var
+R8602:8605 Iteration GenIter B_le def
+R8619:8622 Iteration GenIter iter def
+R8608:8611 Iteration GenIter iter def
+R8602:8605 Iteration GenIter B_le def
+R8619:8622 Iteration GenIter iter def
+R8608:8611 Iteration GenIter iter def
+R8637:8646 Iteration GenIter iter_monot thm
+R8637:8646 Iteration GenIter iter_monot thm
+prf 8698:8716 GenIter converges_to_exists
+R8731:8737 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8739:8740 Coq.Init.Logic <> :type_scope:'exists'_x_'..'_x_','_x not
+R8741:8752 Iteration GenIter converges_to def
+R8756:8756 Iteration <> b var
+R8754:8754 Iteration <> a var
+R8782:8792 Iteration GenIter iter_either thm
+R8782:8792 Iteration GenIter iter_either thm
+R8828:8831 Coq.Init.Datatypes <> Some constr
+R8828:8831 Coq.Init.Datatypes <> Some constr
+R8843:8859 Iteration GenIter converges_to_Some thm
+R8843:8859 Iteration GenIter converges_to_Some thm
+R8899:8902 Coq.Init.Datatypes <> None constr
+R8904:8904 Iteration <> GenIter.ITERATION.B var
+R8899:8902 Coq.Init.Datatypes <> None constr
+R8904:8904 Iteration <> GenIter.ITERATION.B var
+R8915:8915 Coq.Init.Datatypes <> O constr
+R8915:8915 Coq.Init.Datatypes <> O constr
+prf 8945:8963 GenIter converges_to_unique
+R9033:9035 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9032:9032 Iteration <> b var
+R9036:9037 Iteration <> b' var
+R9011:9022 Iteration GenIter converges_to def
+R9026:9027 Iteration <> b' var
+R9024:9024 Iteration <> a var
+R8980:8991 Iteration GenIter converges_to def
+R8995:8995 Iteration <> b var
+R8993:8993 Iteration <> a var
+R9096:9098 Coq.Init.Peano <> max def
+R9096:9098 Coq.Init.Peano <> max def
+R9124:9126 Coq.Init.Peano <> max def
+R9124:9126 Coq.Init.Peano <> max def
+R9150:9157 Coq.Arith.Max <> le_max_r def
+R9150:9157 Coq.Arith.Max <> le_max_r def
+R9166:9173 Coq.Arith.Max <> le_max_l def
+R9166:9173 Coq.Arith.Max <> le_max_l def
+prf 9188:9215 GenIter converges_to_exists_uniquely
+R9230:9237 Coq.Init.Logic <> :type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9239:9240 Coq.Init.Logic <> :type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9241:9252 Iteration GenIter converges_to def
+R9256:9256 Iteration <> b var
+R9254:9254 Iteration <> a var
+R9286:9304 Iteration GenIter converges_to_exists thm
+R9286:9304 Iteration GenIter converges_to_exists thm
+R9359:9377 Iteration GenIter converges_to_unique thm
+R9359:9377 Iteration GenIter converges_to_unique thm
+def 9405:9411 GenIter iterate
+R9417:9417 Iteration <> GenIter.ITERATION.A var
+R9422:9427 Coq.Init.Datatypes <> option ind
+R9429:9429 Iteration <> GenIter.ITERATION.B var
+R9436:9444 Coq.Init.Specif <> proj1_sig def
+R9447:9479 Coq.Logic.Description <> constructive_definite_description prfax
+R9499:9526 Iteration GenIter converges_to_exists_uniquely thm
+R9528:9528 Iteration <> a var
+R9482:9493 Iteration GenIter converges_to def
+R9495:9495 Iteration <> a var
+prf 9540:9559 GenIter converges_to_iterate
+R9605:9607 Coq.Init.Logic <> :type_scope:x_'='_x not
+R9596:9602 Iteration GenIter iterate def
+R9604:9604 Iteration <> a var
+R9608:9608 Iteration <> b var
+R9576:9587 Iteration GenIter converges_to def
+R9591:9591 Iteration <> b var
+R9589:9589 Iteration <> a var
+R9635:9641 Iteration GenIter iterate def
+R9657:9689 Coq.Logic.Description <> constructive_definite_description prfax
+R9709:9736 Iteration GenIter converges_to_exists_uniquely thm
+R9692:9703 Iteration GenIter converges_to def
+R9657:9689 Coq.Logic.Description <> constructive_definite_description prfax
+R9709:9736 Iteration GenIter converges_to_exists_uniquely thm
+R9692:9703 Iteration GenIter converges_to def
+R9768:9786 Iteration GenIter converges_to_unique thm
+R9768:9786 Iteration GenIter converges_to_unique thm
+prf 9814:9833 GenIter iterate_converges_to
+R9848:9859 Iteration GenIter converges_to def
+R9864:9870 Iteration GenIter iterate def
+R9872:9872 Iteration <> a var
+R9861:9861 Iteration <> a var
+R9900:9906 Iteration GenIter iterate def
+R9922:9954 Coq.Logic.Description <> constructive_definite_description prfax
+R9974:10001 Iteration GenIter converges_to_exists_uniquely thm
+R9957:9968 Iteration GenIter converges_to def
+R9922:9954 Coq.Logic.Description <> constructive_definite_description prfax
+R9974:10001 Iteration GenIter converges_to_exists_uniquely thm
+R9957:9968 Iteration GenIter converges_to def
+var 10077:10077 GenIter.ITERATION P
+R10080:10080 Iteration <> GenIter.ITERATION.A var
+var 10100:10100 GenIter.ITERATION Q
+R10103:10103 Iteration <> GenIter.ITERATION.B var
+var 10126:10134 GenIter.ITERATION step_prop
+R10150:10150 Iteration <> GenIter.ITERATION.A var
+R10168:10171 Iteration <> GenIter.ITERATION.step var
+R10173:10173 Iteration <> a var
+R10180:10182 Coq.Init.Datatypes <> inl constr
+R10189:10189 Iteration <> GenIter.ITERATION.Q var
+R10195:10197 Coq.Init.Datatypes <> inr constr
+R10205:10205 Iteration <> GenIter.ITERATION.P var
+R10153:10153 Iteration <> GenIter.ITERATION.P var
+R10155:10155 Iteration <> a var
+prf 10222:10230 GenIter iter_prop
+R10277:10277 Iteration <> GenIter.ITERATION.Q var
+R10279:10279 Iteration <> b var
+R10264:10266 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10256:10259 Iteration GenIter iter def
+R10263:10263 Iteration <> a var
+R10261:10261 Iteration <> n var
+R10267:10270 Coq.Init.Datatypes <> Some constr
+R10272:10272 Iteration <> b var
+R10249:10249 Iteration <> GenIter.ITERATION.P var
+R10251:10251 Iteration <> a var
+R10359:10364 Iteration GenIter F_iter def
+R10379:10387 Iteration <> GenIter.ITERATION.step_prop var
+R10379:10387 Iteration <> GenIter.ITERATION.step_prop var
+R10404:10407 Iteration <> GenIter.ITERATION.step var
+R10404:10407 Iteration <> GenIter.ITERATION.step var
+prf 10473:10484 GenIter iterate_prop
+R10530:10530 Iteration <> GenIter.ITERATION.Q var
+R10532:10532 Iteration <> b var
+R10523:10523 Iteration <> GenIter.ITERATION.P var
+R10525:10525 Iteration <> a var
+R10510:10512 Coq.Init.Logic <> :type_scope:x_'='_x not
+R10501:10507 Iteration GenIter iterate def
+R10509:10509 Iteration <> a var
+R10513:10516 Coq.Init.Datatypes <> Some constr
+R10518:10518 Iteration <> b var
+R10562:10581 Iteration GenIter iterate_converges_to thm
+R10562:10581 Iteration GenIter iterate_converges_to thm
+R10623:10631 Iteration GenIter iter_prop thm
+R10623:10631 Iteration GenIter iter_prop thm
+R10675:10683 Iteration GenIter.ITERATION <> sec
+R10691:10697 Iteration GenIter <> mod

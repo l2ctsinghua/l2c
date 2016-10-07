@@ -1,0 +1,18 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(x2),array(real,INT(5 ))),var_decls(vars(x3),array(real,INT(5 )))),
+			returns(var_decls(vars(y2),array(bool,INT(5 )))),
+			body
+			(
+				=(lvalue(ID(y2,array(bool,INT(5 )),())),apply_expr((array(bool,INT(5 ))),(()),high_order(highorder_map,prefix($<>$),INT(5 )),list_expr(ID(x2,array(real,INT(5 )),()),ID(x3,array(real,INT(5 )),()))))
+			)
+		)
+
+	)
+)

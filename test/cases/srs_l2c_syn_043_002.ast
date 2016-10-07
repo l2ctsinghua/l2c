@@ -1,0 +1,26 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(s,construct(field(label1,bool),field(label3,int),field(label2,char)))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(Input1),typename(s)),var_decls(vars(Input2),bool)),
+			returns(var_decls(vars(Output1),typename(s))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(s)),var_decls(vars(_L2),typename(s)),var_decls(vars(_L4),bool)),
+				=(lvalue(ID(_L1,construct(field(label1,bool),field(label3,int),field(label2,char)),())),mixed_constructor(construct(field(label1,bool),field(label3,int),field(label2,char)),(),ID(_L2,construct(field(label1,bool),field(label3,int),field(label2,char)),()),(struct_item(label1)),ID(_L4,bool,())))
+,				=(lvalue(ID(_L2,construct(field(label1,bool),field(label3,int),field(label2,char)),())),ID(Input1,construct(field(label1,bool),field(label3,int),field(label2,char)),()))
+,				=(lvalue(ID(_L4,bool,())),ID(Input2,bool,()))
+,				=(lvalue(ID(Output1,construct(field(label1,bool),field(label3,int),field(label2,char)),())),ID(_L1,construct(field(label1,bool),field(label3,int),field(label2,char)),()))
+			)
+		)
+
+	)
+)

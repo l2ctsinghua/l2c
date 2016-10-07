@@ -1,0 +1,49 @@
+TopLevel(
+	main(car),
+	program
+	(
+		type_block
+		(
+			type(cond,construct_enum(red,blue,yellow)
+),
+			type(behave,construct_enum(stop,go,trans)
+)
+		),
+		node
+		(
+			function,
+			car,
+			params(var_decls(vars(light),typename(cond))),
+			returns(var_decls(vars(choice),typename(behave))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(cond)),var_decls(vars(_L2),typename(behave)),var_decls(vars(_L3),typename(behave)),var_decls(vars(_L4),typename(behave)),var_decls(vars(_L5),typename(behave))),
+				=(lvalue(ID(_L1,construct_enum(red,blue,yellow)
+,())),ID(light,construct_enum(red,blue,yellow)
+,()))
+,				=(lvalue(ID(choice,construct_enum(stop,go,trans)
+,())),ID(_L2,construct_enum(stop,go,trans)
+,()))
+,				=(lvalue(ID(_L2,construct_enum(stop,go,trans)
+,())),switch_expr((construct_enum(stop,go,trans)
+),(()),ID(_L1,construct_enum(red,blue,yellow)
+,()),case(ID(red,construct_enum(red,blue,yellow)
+),ID(_L3,construct_enum(stop,go,trans)
+,())),case(ID(yellow,construct_enum(red,blue,yellow)
+),ID(_L4,construct_enum(stop,go,trans)
+,())),case(pattern_any,ID(_L5,construct_enum(stop,go,trans)
+,()))))
+,				=(lvalue(ID(_L3,construct_enum(stop,go,trans)
+,())),ID(stop,construct_enum(stop,go,trans)
+,()))
+,				=(lvalue(ID(_L4,construct_enum(stop,go,trans)
+,())),ID(go,construct_enum(stop,go,trans)
+,()))
+,				=(lvalue(ID(_L5,construct_enum(stop,go,trans)
+,())),ID(trans,construct_enum(stop,go,trans)
+,()))
+			)
+		)
+
+	)
+)

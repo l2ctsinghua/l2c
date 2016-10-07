@@ -1,0 +1,22 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			node,
+			Node1,
+			params(var_decls(vars(var1),typename(myInt))),
+			returns(var_decls(vars(output1),typename(myInt))),
+			body
+			(
+				=(lvalue(ID(output1,int,())),tempo_arrow((int),(()),INT(10),ID(var1,int,())))
+			)
+		)
+
+	)
+)

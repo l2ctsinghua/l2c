@@ -1,0 +1,33 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int),
+			type(myBool,bool),
+			type(myReal,real)
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myInt)),var_decls(vars(var2),typename(myBool)),var_decls(vars(var3),typename(myReal))),
+			returns(var_decls(vars(output1),typename(myAnother)),var_decls(vars(output2),typename(myBool)),var_decls(vars(output3),typename(myReal)),var_decls(vars(output4),typename(myChar))),
+			body
+			(
+				=(lvalue(ID(output1,int,())),binop_add(int,(),ID(var1,int,()),INT(1000000)))
+,
+				=(lvalue(ID(output2,bool,())),binop_and(bool,(),ID(var2,bool,()),BOOL(true)))
+,				=(lvalue(ID(output3,real,())),binop_subtract(real,(),ID(var3,real,()),REAL(12.231231234123412134123412341343)))
+,				=(lvalue(ID(output4,char,())),CHAR(98))
+			)
+		)
+,
+		type_block
+		(
+			type(myChar,char),
+			type(myAnother,typename(myInt))
+		)
+	)
+)

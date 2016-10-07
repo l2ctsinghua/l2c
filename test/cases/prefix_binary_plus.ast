@@ -1,0 +1,18 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(x1,x2),int)),
+			returns(var_decls(vars(y1),int)),
+			body
+			(
+				=(lvalue(ID(y1,int,())),apply_expr((int),(()),prefix($+$),list_expr(ID(x1,int,()),ID(x2,int,()))))
+			)
+		)
+
+	)
+)

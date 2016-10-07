@@ -1,0 +1,27 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(enum1,construct_enum(one,ten,centum)
+)
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(enum1))),
+			returns(var_decls(vars(output1),int)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),switch_expr((int),(()),ID(var1,construct_enum(one,ten,centum)
+,()),case(ID(one,construct_enum(one,ten,centum)
+),INT(1)),case(ID(ten,construct_enum(one,ten,centum)
+),INT(10)),case(ID(centum,construct_enum(one,ten,centum)
+),INT(100))))
+			)
+		)
+
+	)
+)

@@ -1,0 +1,28 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			function,
+			Node1,
+			params(var_decls(vars(var1),typename(myInt))),
+			returns(var_decls(vars(output1),bool),var_decls(vars(output2),bool),var_decls(vars(output3),bool),var_decls(vars(output4,output5,output6),bool)),
+			body
+			(
+				=(lvalue(ID(output1,bool,())),binop_eq(bool,(),ID(var1,int,()),INT(12)))
+,
+				=(lvalue(ID(output2,bool,())),binop_neq(bool,(),ID(var1,int,()),INT(23)))
+,				=(lvalue(ID(output3,bool,())),binop_lt(bool,(),INT(123),ID(var1,int,())))
+,				=(lvalue(ID(output4,bool,())),binop_gt(bool,(),ID(var1,int,()),INT(233)))
+,				=(lvalue(ID(output5,bool,())),binop_le(bool,(),ID(var1,int,()),INT(12)))
+,				=(lvalue(ID(output6,bool,())),binop_ge(bool,(),ID(var1,int,()),INT(2341230)))
+			)
+		)
+
+	)
+)

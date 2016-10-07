@@ -1,0 +1,67 @@
+TopLevel(
+	main(Operator3),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		type_block
+		(
+			type(TypeArrayBool1,array(typename(TypeBase1),INT(4 )))
+		),
+		type_block
+		(
+			type(TypeBase1,construct(field(label1,bool),field(label2,bool)))
+		),
+		type_block
+		(
+			type(TypeBase2,construct(field(label1,bool),field(label2,bool)))
+		),
+		type_block
+		(
+			type(TypeArray1,array(typename(TypeBase1),INT(1 )))
+		),
+		type_block
+		(
+			type(TypeArray2,array(typename(TypeArray1),INT(3 )))
+		),
+		type_block
+		(
+			type(typeReal4,array(real,INT(4 )))
+		),
+		type_block
+		(
+			type(typeReal1,array(real,INT(1 )))
+		),
+		node
+		(
+			node,
+			Operator3,
+			params(var_decls(vars(Input1),int)),
+			returns(var_decls(vars(Output1),int)),
+			body
+			(
+				localvars(var_decls(vars(_L1),int),var_decls(vars(_L2),int),var_decls(vars(_L3),int),var_decls(vars(_L4),int)),
+				=(lvalue(ID(_L1,int,())),switch_expr((int),(()),ID(_L2,int,()),case(INT(1),ID(_L3,int,())),case(INT(-1),ID(_L4,int,())),case(pattern_any,ID(_L4,int,()))))
+,				=(lvalue(ID(_L2,int,())),ID(Input1,int,()))
+,				=(lvalue(ID(Output1,int,())),ID(_L1,int,()))
+,				=(lvalue(ID(_L3,int,())),INT(11))
+,				=(lvalue(ID(_L4,int,())),unop_neg(int,(),INT(11)))
+			)
+		)
+
+	)
+)

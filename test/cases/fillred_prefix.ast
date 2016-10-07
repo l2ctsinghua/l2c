@@ -1,0 +1,36 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(x1),int),var_decls(vars(x2),array(int,INT(5 ))),var_decls(vars(x3),real),var_decls(vars(x4),array(real,INT(5 ))),var_decls(vars(x5),bool),var_decls(vars(x6),array(bool,INT(5 ))),var_decls(vars(x7),float),var_decls(vars(x8),short)),
+			returns(var_decls(vars(y1),int),var_decls(vars(y2),int),var_decls(vars(y3),int),var_decls(vars(y4),int),var_decls(vars(y5),int),var_decls(vars(y6),real),var_decls(vars(y7),bool),var_decls(vars(y8),bool),var_decls(vars(y9),bool),var_decls(vars(y10),bool),var_decls(vars(y11),bool),var_decls(vars(y12),bool),var_decls(vars(y13),int),var_decls(vars(y14),int),var_decls(vars(y15),real),var_decls(vars(y16),float),var_decls(vars(y17),int),var_decls(vars(y18),short)),
+			body
+			(
+				=(lvalue(ID(y1,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix($+$),INT(5 )),list_expr(ID(x1,int,()),ID(x2,array(int,INT(5 )),()))))
+,
+				=(lvalue(ID(y2,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix($-$),INT(5 )),list_expr(ID(x1,int,()),ID(x2,array(int,INT(5 )),()))))
+,				=(lvalue(ID(y3,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix($*$),INT(5 )),list_expr(ID(x1,int,()),ID(x2,array(int,INT(5 )),()))))
+,				=(lvalue(ID(y4,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix($div$),INT(5 )),list_expr(ID(x1,int,()),ID(x2,array(int,INT(5 )),()))))
+,				=(lvalue(ID(y5,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix($mod$),INT(5 )),list_expr(ID(x1,int,()),ID(x2,array(int,INT(5 )),()))))
+,				=(lvalue(ID(y6,real,())),apply_expr((real),(()),high_order(highorder_fillred,prefix($/$),INT(5 )),list_expr(ID(x3,real,()),ID(x4,array(real,INT(5 )),()))))
+,				=(lvalue(ID(y7,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($=$),INT(5 )),list_expr(ID(x5,bool,()),ID(x6,array(bool,INT(5 )),()))))
+,				=(lvalue(ID(y8,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($<>$),INT(5 )),list_expr(ID(x5,bool,()),ID(x6,array(bool,INT(5 )),()))))
+,				=(lvalue(ID(y9,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($and$),INT(5 )),list_expr(ID(x5,bool,()),ID(x6,array(bool,INT(5 )),()))))
+,				=(lvalue(ID(y10,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($or$),INT(5 )),list_expr(ID(x5,bool,()),ID(x6,array(bool,INT(5 )),()))))
+,				=(lvalue(ID(y11,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($xor$),INT(5 )),list_expr(ID(x5,bool,()),ID(x6,array(bool,INT(5 )),()))))
+,				=(lvalue(ID(y12,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix(not$),INT(5 )),list_expr(ID(x5,bool,()))))
+,				=(lvalue(ID(y13,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix(+$),INT(5 )),list_expr(ID(x1,int,()))))
+,				=(lvalue(ID(y14,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix(-$),INT(5 )),list_expr(ID(x1,int,()))))
+,				=(lvalue(ID(y15,real,())),apply_expr((real),(()),high_order(highorder_fillred,prefix(real$),INT(5 )),list_expr(ID(x3,real,()))))
+,				=(lvalue(ID(y16,float,())),apply_expr((float),(()),high_order(highorder_fillred,prefix(float$),INT(5 )),list_expr(ID(x7,float,()))))
+,				=(lvalue(ID(y17,int,())),apply_expr((int),(()),high_order(highorder_fillred,prefix(int$),INT(5 )),list_expr(ID(x1,int,()))))
+,				=(lvalue(ID(y18,short,())),apply_expr((short),(()),high_order(highorder_fillred,prefix(short$),INT(5 )),list_expr(ID(x8,short,()))))
+			)
+		)
+
+	)
+)

@@ -1,0 +1,39 @@
+TopLevel(
+	main(enum_array_alias),
+	program
+	(
+		const_block
+		(
+			const(arr1,typename(arr_t),construct_array(construct_array(ID(east,construct_enum(east,south,west,north)
+),ID(west,construct_enum(east,south,west,north)
+)),construct_array(ID(south,construct_enum(east,south,west,north)
+),ID(north,construct_enum(east,south,west,north)
+)))),
+			const(arr1_alias,typename(arr_t),construct_array(construct_array(ID(east,construct_enum(east,south,west,north)
+),ID(west,construct_enum(east,south,west,north)
+)),construct_array(ID(south,construct_enum(east,south,west,north)
+),ID(north,construct_enum(east,south,west,north)
+))))
+		),
+		type_block
+		(
+			type(enum_t,construct_enum(east,south,west,north)
+),
+			type(arr_t,array(array(typename(enum_t),INT(2 )),INT(2 )))
+		),
+		node
+		(
+			function,
+			enum_array_alias,
+			params( ),
+			returns(var_decls(vars(Output1),typename(arr_t))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(arr_t))),
+				=(lvalue(ID(_L1,array(array(typename(enum_t),INT(2 )),INT(2 )),())),ID(arr1_alias,array(array(typename(enum_t),INT(2 )),INT(2 )),()))
+,				=(lvalue(ID(Output1,array(array(typename(enum_t),INT(2 )),INT(2 )),())),ID(_L1,array(array(typename(enum_t),INT(2 )),INT(2 )),()))
+			)
+		)
+
+	)
+)

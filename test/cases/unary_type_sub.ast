@@ -1,0 +1,25 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(type1,array(int,INT(5 ))),
+			type(type2,array(real,INT(6 )))
+		),
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(var1),typename(type1)),var_decls(vars(var2),typename(type2))),
+			returns(var_decls(vars(y1),int),var_decls(vars(y2),real)),
+			body
+			(
+				=(lvalue(ID(y1,int,())),array_index(int,(),ID(var1,array(int,INT(5 )),()),INT(2 )))
+,
+				=(lvalue(ID(y2,real,())),unop_neg(real,(),array_index(real,(),ID(var2,array(real,INT(6 )),()),INT(3 ))))
+			)
+		)
+
+	)
+)

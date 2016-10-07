@@ -1,0 +1,48 @@
+TopLevel(
+	main(Operator1),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		node
+		(
+			node,
+			Operator1,
+			params(var_decls(vars(Input1),int)),
+			returns(var_decls(vars(Output1),uint)),
+			body
+			(
+				localvars(var_decls(vars(_L1),int),var_decls(vars(_L28),uint)),
+				=(lvalue(ID(_L1,int,())),ID(Input1,int,()))
+,				=(lvalue(ID(Output1,uint,())),ID(_L28,uint,()))
+,				=(lvalue(ID(_L28,uint,())),apply_expr((uint),(()),prefix(INT_to_UINT,param_types(int),ret_types(uint)),list_expr(ID(_L1,int,()))))
+			)
+		)
+,
+		node
+		(
+			node,
+			INT_to_UINT,
+			params(var_decls(vars(x),int)),
+			returns(var_decls(vars(y),uint)),
+			body
+			(
+							)
+		)
+
+	)
+)

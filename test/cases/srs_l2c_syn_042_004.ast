@@ -1,0 +1,32 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		const_block
+		(
+			const(arr1,typename(at),construct_array(construct_array(REAL(0.10000000000000001),REAL(0.20000000000000001)),construct_array(REAL(0.01),REAL(2.0)),construct_array(REAL(0.20000000000000001),REAL(20.0))))
+		),
+		type_block
+		(
+			type(at,array(array(real,INT(2 )),INT(3 )))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(Input1),array(real,INT(2 )))),
+			returns(var_decls(vars(Output1),array(array(real,INT(2 )),INT(2 ))),var_decls(vars(Output2),array(array(real,INT(2 )),INT(3 )))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(at)),var_decls(vars(_L2),array(real,INT(2 ))),var_decls(vars(_L3),array(array(real,INT(2 )),INT(2 ))),var_decls(vars(_L4),array(real,INT(2 )))),
+				=(lvalue(ID(_L1,array(array(real,INT(2 )),INT(3 )),())),ID(arr1,array(array(real,INT(2 )),INT(3 )),()))
+,				=(lvalue(ID(_L2,array(real,INT(2 )),())),construct_array(array(real,INT(2 )),(),list_expr(REAL(0.001),REAL(0.002))))
+,				=(lvalue(ID(_L3,array(array(real,INT(2 )),INT(2 )),())),construct_array(array(array(real,INT(2 )),INT(2 )),(),list_expr(ID(_L2,array(real,INT(2 )),()),ID(_L4,array(real,INT(2 )),()))))
+,				=(lvalue(ID(_L4,array(real,INT(2 )),())),ID(Input1,array(real,INT(2 )),()))
+,				=(lvalue(ID(Output1,array(array(real,INT(2 )),INT(2 )),())),ID(_L3,array(array(real,INT(2 )),INT(2 )),()))
+,				=(lvalue(ID(Output2,array(array(real,INT(2 )),INT(3 )),())),ID(_L1,array(array(real,INT(2 )),INT(3 )),()))
+			)
+		)
+
+	)
+)

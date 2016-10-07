@@ -1,0 +1,62 @@
+TopLevel(
+	main(Operator5),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		type_block
+		(
+			type(Type1,construct(field(label1,bool),field(label2,bool)))
+		),
+		type_block
+		(
+			type(Type2,array(bool,INT(2 )))
+		),
+		type_block
+		(
+			type(Type3,array(array(bool,INT(2 )),INT(1 )))
+		),
+		type_block
+		(
+			type(Type4,construct(field(label1,bool)))
+		),
+		type_block
+		(
+			type(Type5,array(array(bool,INT(2 )),INT(6 )))
+		),
+		type_block
+		(
+			type(Type6,array(array(bool,INT(2 )),INT(3 )))
+		),
+		node
+		(
+			function,
+			Operator5,
+			params(var_decls(vars(Input1),typename(Type2)),var_decls(vars(Input2),bool)),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(var_decls(vars(_L1),bool),var_decls(vars(_L2),typename(Type2)),var_decls(vars(_L3),bool)),
+				=(lvalue(ID(_L1,bool,())),dynamic_project(bool,(),ID(_L2,array(bool,INT(2 )),()),(INT(0)),ID(_L3,bool,())))
+,				=(lvalue(ID(_L2,array(bool,INT(2 )),())),ID(Input1,array(bool,INT(2 )),()))
+,				=(lvalue(ID(_L3,bool,())),ID(Input2,bool,()))
+,				=(lvalue(ID(Output1,bool,())),ID(_L1,bool,()))
+			)
+		)
+
+	)
+)

@@ -1,0 +1,40 @@
+TopLevel(
+	main(Operator3),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		node
+		(
+			node,
+			Operator3,
+			params(var_decls(vars(Input1),bool)),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(var_decls(vars(_L1),bool),var_decls(vars(_L3),bool),var_decls(vars(_L4),bool),var_decls(vars(_L5),bool),var_decls(vars(_L9),bool)),
+				=(lvalue(ID(_L1,bool,())),binop_neq(bool,(),ID(_L3,bool,()),ID(_L4,bool,())))
+,				=(lvalue(ID(_L3,bool,())),ID(Input1,bool,()))
+,				=(lvalue(ID(_L4,bool,())),ID(Input1,bool,()))
+,				=(lvalue(ID(Output1,bool,())),ID(_L9,bool,()))
+,				=(lvalue(ID(_L5,bool,())),binop_eq(bool,(),ID(_L3,bool,()),ID(_L4,bool,())))
+,				=(lvalue(ID(_L9,bool,())),binop_xor(bool,(),ID(_L1,bool,()),ID(_L5,bool,())))
+			)
+		)
+
+	)
+)

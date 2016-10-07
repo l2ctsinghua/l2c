@@ -1,0 +1,24 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(var1),int),var_decls(vars(var2),uint),var_decls(vars(var3),short),var_decls(vars(var4),ushort),var_decls(vars(var5),real),var_decls(vars(var6),float)),
+			returns(var_decls(vars(y1),int),var_decls(vars(y2),uint),var_decls(vars(y3),short),var_decls(vars(y4),ushort),var_decls(vars(y5),real),var_decls(vars(y6),float)),
+			body
+			(
+				=(lvalue(ID(y1,int,())),binop_subtract(int,(),ID(var1,int,()),INT(1)))
+,
+				=(lvalue(ID(y2,uint,())),binop_subtract(uint,(),ID(var2,uint,()),UINT(2)))
+,				=(lvalue(ID(y3,short,())),binop_subtract(short,(),ID(var3,short,()),SHORT(4)))
+,				=(lvalue(ID(y4,ushort,())),binop_subtract(ushort,(),ID(var4,ushort,()),USHORT(5)))
+,				=(lvalue(ID(y5,real,())),binop_subtract(real,(),ID(var5,real,()),REAL(6.5)))
+,				=(lvalue(ID(y6,float,())),binop_subtract(float,(),ID(var6,float,()),FLOAT(7.5)))
+			)
+		)
+
+	)
+)

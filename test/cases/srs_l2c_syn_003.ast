@@ -1,0 +1,23 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myType,typename(myInt)),
+			type(myInt,int)
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myType))),
+			returns(var_decls(vars(output1),typename(myType))),
+			body
+			(
+				=(lvalue(ID(output1,int,())),ID(var1,int,()))
+			)
+		)
+
+	)
+)

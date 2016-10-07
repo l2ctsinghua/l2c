@@ -1,0 +1,29 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		const_block
+		(
+			const(size1,int,INT(10))
+		),
+		const_block
+		(
+			const(size2,int,INT(20))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),int)),
+			returns(var_decls(vars(output1),array(int,INT(11 ))),var_decls(vars(output2),int)),
+			body
+			(
+				localvars(var_decls(vars(array1),array(array(int,INT(11 )),INT(20 )))),
+				=(lvalue(ID(array1,array(array(int,INT(11 )),INT(20 )),())),array_dim((array(array(int,INT(11 )),INT(20 ))),(()),array_dim((array(int,INT(11 ))),(()),ID(var1,int,()),INT(11)),INT(20)))
+,				=(lvalue(ID(output1,array(int,INT(11 )),())),array_index(array(int,INT(11 )),(),ID(array1,array(array(int,INT(11 )),INT(20 )),()),INT(13 )))
+,				=(lvalue(ID(output2,int,())),array_index(int,(),ID(output1,array(int,INT(11 )),()),INT(6 )))
+			)
+		)
+
+	)
+)

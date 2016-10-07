@@ -1,0 +1,25 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		const_block
+		(
+			const(c5,real,REAL(2.2439024390243905)),
+			const(c6,float,REAL(4.2916665077209473))
+		),
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(var1),real)),
+			returns(var_decls(vars(y5),real),var_decls(vars(y6),float)),
+			body
+			(
+				=(lvalue(ID(y5,real,())),binop_add(real,(),ID(var1,real,()),binop_divide(real,(),ID(c5,real,()),REAL(6.5))))
+,
+				=(lvalue(ID(y6,float,())),binop_divide(float,(),ID(c6,float,()),FLOAT(7.5)))
+			)
+		)
+
+	)
+)

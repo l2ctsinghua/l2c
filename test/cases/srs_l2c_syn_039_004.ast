@@ -1,0 +1,18 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),bool)),
+			returns(var_decls(vars(output1),int)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),switch_expr((int),(()),ID(var1,bool,()),case(BOOL(true),INT(1)),case(BOOL(false),INT(0))))
+			)
+		)
+
+	)
+)

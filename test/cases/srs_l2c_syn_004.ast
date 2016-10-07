@@ -1,0 +1,43 @@
+TopLevel(
+	main(enum_const),
+	program
+	(
+		const_block
+		(
+			const(light_blue,typename(lights),ID(blue,construct_enum(red,yellow,blue)
+))
+		),
+		type_block
+		(
+			type(lights,construct_enum(red,yellow,blue)
+)
+		),
+		node
+		(
+			function,
+			enum_const,
+			params(var_decls(vars(control),bool)),
+			returns(var_decls(vars(Output1),typename(lights))),
+			body
+			(
+				localvars(var_decls(vars(_L1),typename(lights)),var_decls(vars(_L2),bool),var_decls(vars(_L6),typename(lights)),var_decls(vars(_L7),typename(lights))),
+				=(lvalue(ID(_L1,construct_enum(red,yellow,blue)
+,())),if_expr((construct_enum(red,yellow,blue)
+),(()),ID(_L2,bool,()),list_expr(ID(_L6,construct_enum(red,yellow,blue)
+,())),list_expr(ID(_L7,construct_enum(red,yellow,blue)
+,()))))
+,				=(lvalue(ID(_L2,bool,())),ID(control,bool,()))
+,				=(lvalue(ID(Output1,construct_enum(red,yellow,blue)
+,())),ID(_L1,construct_enum(red,yellow,blue)
+,()))
+,				=(lvalue(ID(_L6,construct_enum(red,yellow,blue)
+,())),ID(light_blue,construct_enum(red,yellow,blue)
+,()))
+,				=(lvalue(ID(_L7,construct_enum(red,yellow,blue)
+,())),ID(red,construct_enum(red,yellow,blue)
+,()))
+			)
+		)
+
+	)
+)

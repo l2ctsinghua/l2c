@@ -1,0 +1,25 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myInt))),
+			returns(var_decls(vars(output1,output2),typename(myInt))),
+			body
+			(
+				localvars(var_decls(vars(temp1),int)),
+				=(lvalue(ID(output1,int,())),binop_add(int,(),ID(var1,int,()),ID(temp1,int,())))
+,				=(lvalue(ID(temp1,int,())),binop_add(int,(),INT(20),ID(var1,int,())))
+,				=(lvalue(ID(output2,int,())),INT(20))
+			)
+		)
+
+	)
+)

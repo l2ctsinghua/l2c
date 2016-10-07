@@ -1,0 +1,24 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myArray1,array(array(int,INT(2 )),INT(3 )))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myArray1))),
+			returns(var_decls(vars(output1),int),var_decls(vars(output2),typename(myArray1))),
+			body
+			(
+				=(lvalue(ID(output1,int,())),binop_add(int,(),binop_add(int,(),binop_add(int,(),binop_add(int,(),array_index(int,(),array_index(array(int,INT(2 )),(),ID(var1,array(array(int,INT(2 )),INT(3 )),()),INT(0 )),INT(0 )),array_index(int,(),array_index(array(int,INT(2 )),(),ID(var1,array(array(int,INT(2 )),INT(3 )),()),INT(0 )),INT(1 ))),array_index(int,(),array_index(array(int,INT(2 )),(),ID(var1,array(array(int,INT(2 )),INT(3 )),()),INT(1 )),INT(0 ))),array_index(int,(),array_index(array(int,INT(2 )),(),ID(var1,array(array(int,INT(2 )),INT(3 )),()),INT(1 )),INT(1 ))),array_index(int,(),array_index(array(int,INT(2 )),(),ID(var1,array(array(int,INT(2 )),INT(3 )),()),INT(2 )),INT(1 ))))
+,
+				=(lvalue(ID(output2,array(array(int,INT(2 )),INT(3 )),())),array_dim((array(array(int,INT(2 )),INT(3 ))),(()),array_dim((array(int,INT(2 ))),(()),INT(5),INT(2)),INT(3)))
+			)
+		)
+
+	)
+)

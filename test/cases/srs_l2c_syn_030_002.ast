@@ -1,0 +1,28 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			node,
+			Node1,
+			params(var_decls(vars(var1),typename(myInt))),
+			returns(var_decls(vars(output1,output2,output3,output4,output5),typename(myInt)),var_decls(vars(output6),real)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),binop_add(int,(),ID(var1,int,()),INT(23)))
+,
+				=(lvalue(ID(output2,int,())),binop_subtract(int,(),ID(var1,int,()),INT(112)))
+,				=(lvalue(ID(output3,int,())),binop_multiply(int,(),ID(var1,int,()),INT(1203)))
+,				=(lvalue(ID(output6,real,())),binop_divide(real,(),REAL(23.03),REAL(132.9)))
+,				=(lvalue(ID(output5,int,())),binop_mod(int,(),ID(var1,int,()),INT(2123)))
+,				=(lvalue(ID(output4,int,())),binop_div(int,(),ID(var1,int,()),INT(23)))
+			)
+		)
+
+	)
+)

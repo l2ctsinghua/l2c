@@ -1,0 +1,75 @@
+TopLevel(
+	main(Operator13),
+	program
+	(
+		type_block
+		(
+			type(int_signal,construct(field(Value,int),field(Status,bool),field(pad1,bool)))
+		),
+		type_block
+		(
+			type(bool_signal,construct(field(Value,bool),field(Status,bool)))
+		),
+		type_block
+		(
+			type(device_signal,construct(field(msgCod1,int),field(msgCod2,int)))
+		),
+		type_block
+		(
+			type(real_signal,construct(field(Value,real),field(Status,bool),field(pad1,bool),field(pad2,bool),field(pad3,bool)))
+		),
+		type_block
+		(
+			type(tya,bool)
+		),
+		type_block
+		(
+			type(tyStu1,construct(field(label1,bool),field(label2,real)))
+		),
+		type_block
+		(
+			type(tyArray1,array(bool,INT(10 )))
+		),
+		type_block
+		(
+			type(tyArray2,array(array(bool,INT(3 )),INT(1 )))
+		),
+		type_block
+		(
+			type(tyArray3,array(typename(bool_signal),INT(1 )))
+		),
+		type_block
+		(
+			type(tyArray4,array(bool,INT(3 )))
+		),
+		const_block
+		(
+			const(ca,int,INT(0))
+		),
+		const_block
+		(
+			const(cb,int,INT(0))
+		),
+		node
+		(
+			node,
+			Operator13,
+			params(var_decls(vars(Input1),int),var_decls(vars(Input2),real)),
+			returns(var_decls(vars(Output1),int),var_decls(vars(Output2),real)),
+			body
+			(
+				localvars(var_decls(vars(_L3),int),var_decls(vars(_L42),int),var_decls(vars(_L44),real),var_decls(vars(_L45),int),var_decls(vars(_L57),real),var_decls(vars(_L65),int),var_decls(vars(_L66),real),var_decls(vars(_L67),int)),
+				=(lvalue(ID(_L3,int,())),ID(Input1,int,()))
+,				=(lvalue(ID(Output1,int,())),ID(_L65,int,()))
+,				=(lvalue(ID(_L42,int,())),tempo_fby((int),(()),list_expr(ID(_L3,int,())),INT(10),list_expr(ID(_L45,int,()))))
+,				=(lvalue(ID(_L44,real,())),ID(Input2,real,()))
+,				=(lvalue(ID(_L45,int,())),INT(1))
+,				=(lvalue(ID(_L57,real,())),REAL(1.0))
+,				=(lvalue(ID(Output2,real,())),ID(_L66,real,()))
+,				=(lvalue(ID(_L65,int,()),ID(_L66,real,())),tempo_fby((int,real),((),()),list_expr(ID(_L42,int,()),ID(_L44,real,())),INT(10),list_expr(ID(_L67,int,()),ID(_L57,real,()))))
+,				=(lvalue(ID(_L67,int,())),INT(1))
+			)
+		)
+
+	)
+)

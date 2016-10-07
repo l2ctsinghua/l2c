@@ -1,0 +1,34 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myStruct2,construct(field(Field1,bool),field(Field2,typename(myStruct))))
+		),
+		type_block
+		(
+			type(myStruct,construct(field(Field1,bool),field(Field2,int)))
+		),
+		const_block
+		(
+			const(myConst1,typename(myStruct2),construct(label_const(Field1,BOOL(true)),label_const(Field2,construct(label_const(Field1,BOOL(false)),label_const(Field2,INT(232)))))),
+			const(myConst2,construct(field(Field1,bool),field(Field2,int)),construct(label_const(Field1,BOOL(true)),label_const(Field2,INT(20))))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myStruct)),var_decls(vars(var2),typename(myStruct)),var_decls(vars(var3),typename(myStruct2))),
+			returns(var_decls(vars(output1),typename(myStruct)),var_decls(vars(output2),typename(myStruct)),var_decls(vars(output3),typename(myStruct2))),
+			body
+			(
+				=(lvalue(ID(output1,construct(field(Field1,bool),field(Field2,int)),())),ID(var1,construct(field(Field1,bool),field(Field2,int)),()))
+,
+				=(lvalue(ID(output2,construct(field(Field1,bool),field(Field2,int)),())),construct(construct(field(Field1,bool),field(Field2,int)),(),label_expr(Field1,binop_and(bool,(),field_access(bool,(),ID(var2,construct(field(Field1,bool),field(Field2,int)),()),Field1),field_access(bool,(),ID(myConst1,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),()),Field1))),label_expr(Field2,field_access(int,(),ID(var2,construct(field(Field1,bool),field(Field2,int)),()),Field2)),))
+,				=(lvalue(ID(output3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),())),construct(construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),(),label_expr(Field1,field_access(bool,(),ID(var3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),()),Field1)),label_expr(Field2,field_access(construct(field(Field1,bool),field(Field2,int)),(),ID(var3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),()),Field2)),))
+			)
+		)
+
+	)
+)

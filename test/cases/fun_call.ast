@@ -1,0 +1,30 @@
+TopLevel(
+	main(fun2),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(x1),int),var_decls(vars(x2),int)),
+			returns(var_decls(vars(y),int)),
+			body
+			(
+				=(lvalue(ID(y,int,())),binop_multiply(int,(),ID(x1,int,()),ID(x2,int,())))
+			)
+		)
+,
+		node
+		(
+			node,
+			fun2,
+			params(var_decls(vars(x1),int),var_decls(vars(x2),int)),
+			returns(var_decls(vars(y),int)),
+			body
+			(
+				=(lvalue(ID(y,int,())),apply_expr((int),(()),prefix(fun1,param_types(int,int),ret_types(int)),list_expr(ID(x1,int,()),ID(x2,int,()))))
+			)
+		)
+
+	)
+)

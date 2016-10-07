@@ -1,0 +1,29 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		type_block
+		(
+			type(myStruct2,construct(field(Field1,bool),field(Field2,typename(myStruct))))
+		),
+		type_block
+		(
+			type(myStruct,construct(field(Field1,bool),field(Field2,int)))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),typename(myStruct)),var_decls(vars(var2),typename(myStruct)),var_decls(vars(var3),typename(myStruct2))),
+			returns(var_decls(vars(output1),typename(myStruct)),var_decls(vars(output2),typename(myStruct)),var_decls(vars(output3),typename(myStruct2))),
+			body
+			(
+				=(lvalue(ID(output1,construct(field(Field1,bool),field(Field2,int)),())),ID(var1,construct(field(Field1,bool),field(Field2,int)),()))
+,
+				=(lvalue(ID(output2,construct(field(Field1,bool),field(Field2,int)),())),construct(construct(field(Field1,bool),field(Field2,int)),(),label_expr(Field1,field_access(bool,(),ID(var2,construct(field(Field1,bool),field(Field2,int)),()),Field1)),label_expr(Field2,field_access(int,(),ID(var2,construct(field(Field1,bool),field(Field2,int)),()),Field2)),))
+,				=(lvalue(ID(output3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),())),construct(construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),(),label_expr(Field1,field_access(bool,(),ID(var3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),()),Field1)),label_expr(Field2,field_access(construct(field(Field1,bool),field(Field2,int)),(),ID(var3,construct(field(Field1,bool),field(Field2,construct(field(Field1,bool),field(Field2,int)))),()),Field2)),))
+			)
+		)
+
+	)
+)

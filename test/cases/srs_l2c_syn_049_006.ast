@@ -1,0 +1,22 @@
+TopLevel(
+	main(fillred_test1),
+	program
+	(
+		node
+		(
+			function,
+			fillred_test1,
+			params(var_decls(vars(Input1),bool),var_decls(vars(Input2),array(bool,INT(10 )))),
+			returns(var_decls(vars(Output1),bool)),
+			body
+			(
+				localvars(var_decls(vars(_L1),bool),var_decls(vars(_L2),bool),var_decls(vars(_L3),array(bool,INT(10 )))),
+				=(lvalue(ID(_L1,bool,())),apply_expr((bool),(()),high_order(highorder_fillred,prefix($and$),INT(10 )),list_expr(ID(_L2,bool,()),ID(_L3,array(bool,INT(10 )),()))))
+,				=(lvalue(ID(_L2,bool,())),ID(Input1,bool,()))
+,				=(lvalue(ID(_L3,array(bool,INT(10 )),())),ID(Input2,array(bool,INT(10 )),()))
+,				=(lvalue(ID(Output1,bool,())),ID(_L1,bool,()))
+			)
+		)
+
+	)
+)

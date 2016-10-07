@@ -1,0 +1,21 @@
+TopLevel(
+	main(map_test1),
+	program
+	(
+		node
+		(
+			function,
+			map_test1,
+			params(var_decls(vars(Input1),array(bool,INT(1 )))),
+			returns(var_decls(vars(Output1),array(bool,INT(1 )))),
+			body
+			(
+				localvars(var_decls(vars(_L1),array(bool,INT(1 ))),var_decls(vars(_L2),array(bool,INT(1 )))),
+				=(lvalue(ID(_L1,array(bool,INT(1 )),())),apply_expr((array(bool,INT(1 ))),(()),high_order(highorder_map,prefix(not$),INT(1 )),list_expr(ID(_L2,array(bool,INT(1 )),()))))
+,				=(lvalue(ID(_L2,array(bool,INT(1 )),())),ID(Input1,array(bool,INT(1 )),()))
+,				=(lvalue(ID(Output1,array(bool,INT(1 )),())),ID(_L1,array(bool,INT(1 )),()))
+			)
+		)
+
+	)
+)

@@ -1,0 +1,22 @@
+TopLevel(
+	main(Node1),
+	program
+	(
+		type_block
+		(
+			type(myInt,int)
+		),
+		node
+		(
+			node,
+			Node1,
+			params(var_decls(vars(var1),bool)),
+			returns(var_decls(vars(output1),bool)),
+			body
+			(
+				=(lvalue(ID(output1,bool,())),unop_not(bool,(),ID(var1,bool,())))
+			)
+		)
+
+	)
+)

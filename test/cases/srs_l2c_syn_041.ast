@@ -1,0 +1,20 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),int)),
+			returns(var_decls(vars(output1),int)),
+			body
+			(
+				localvars(var_decls(vars(struct1),construct(field(field1,int),field(field2,real),field(field3,bool)))),
+				=(lvalue(ID(struct1,construct(field(field1,int),field(field2,real),field(field3,bool)),())),construct(construct(field(field1,int),field(field2,real),field(field3,bool)),(),label_expr(field1,ID(var1,int,())),label_expr(field2,REAL(2.0)),label_expr(field3,BOOL(true)),))
+,				=(lvalue(ID(output1,int,())),field_access(int,(),ID(struct1,construct(field(field1,int),field(field2,real),field(field3,bool)),()),field1))
+			)
+		)
+
+	)
+)

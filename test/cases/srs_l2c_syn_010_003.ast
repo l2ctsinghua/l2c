@@ -1,0 +1,23 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		const_block
+		(
+			const(myConst1,int,INT(2798)),
+			const(myConst2,int,INT(23))
+		),
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),int)),
+			returns(var_decls(vars(output1),int)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),binop_add(int,(),binop_add(int,(),ID(var1,int,()),ID(myConst1,int,())),ID(myConst2,int,())))
+			)
+		)
+
+	)
+)

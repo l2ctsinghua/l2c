@@ -1,0 +1,22 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			node,
+			fun1,
+			params(var_decls(vars(var1,var2),bool)),
+			returns(var_decls(vars(y1,y2,y3,y4),bool)),
+			body
+			(
+				=(lvalue(ID(y1,bool,())),apply_expr((bool),(()),prefix($and$),list_expr(ID(var1,bool,()),ID(var2,bool,()))))
+,
+				=(lvalue(ID(y2,bool,())),apply_expr((bool),(()),prefix($or$),list_expr(ID(var1,bool,()),ID(var2,bool,()))))
+,				=(lvalue(ID(y3,bool,())),apply_expr((bool),(()),prefix($xor$),list_expr(ID(var1,bool,()),ID(var2,bool,()))))
+,				=(lvalue(ID(y4,bool,())),apply_expr((bool),(()),prefix(not$),list_expr(ID(var1,bool,()))))
+			)
+		)
+
+	)
+)

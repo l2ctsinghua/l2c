@@ -1,0 +1,46 @@
+DIGEST ee184f053b11dcfa96e33aa20a57f730
+FAxioms
+R1126:1139 Coq.Logic.ClassicalFacts <> <> lib
+R1150:1173 Coq.Logic.FunctionalExtensionality <> <> lib
+prf 1331:1359 <> functional_extensionality_dep
+R1386:1386 Axioms <> A var
+R1415:1415 Axioms <> A var
+R1418:1418 Axioms <> B var
+R1420:1420 Axioms <> x var
+R1452:1454 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1451:1451 Axioms <> f var
+R1455:1455 Axioms <> g var
+R1440:1442 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1437:1437 Axioms <> f var
+R1439:1439 Axioms <> x var
+R1443:1443 Axioms <> g var
+R1445:1445 Axioms <> x var
+R1465:1518 Coq.Logic.FunctionalExtensionality <> functional_extensionality_dep prfax
+prf 1612:1636 <> functional_extensionality
+R1672:1672 Axioms <> B var
+R1667:1667 Axioms <> A var
+R1702:1704 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1701:1701 Axioms <> f var
+R1705:1705 Axioms <> g var
+R1690:1692 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1687:1687 Axioms <> f var
+R1689:1689 Axioms <> x var
+R1693:1693 Axioms <> g var
+R1695:1695 Axioms <> x var
+R1715:1764 Coq.Logic.FunctionalExtensionality <> functional_extensionality thm
+prf 1891:1904 <> extensionality
+R1940:1940 Axioms <> B var
+R1935:1935 Axioms <> A var
+R1971:1973 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1970:1970 Axioms <> f var
+R1974:1974 Axioms <> g var
+R1959:1961 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1956:1956 Axioms <> f var
+R1958:1958 Axioms <> x var
+R1962:1962 Axioms <> g var
+R1964:1964 Axioms <> x var
+R1984:2008 Axioms <> functional_extensionality thm
+R2031:2044 Axioms <> extensionality thm
+ax 2121:2129 <> proof_irr
+R2132:2163 Coq.Logic.ClassicalFacts <> proof_irrelevance def
+R2186:2194 Axioms <> proof_irr prfax

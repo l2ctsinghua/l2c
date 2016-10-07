@@ -1,0 +1,18 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params(var_decls(vars(var1),char)),
+			returns(var_decls(vars(output1),int)),
+			body
+			(
+				=(lvalue(ID(output1,int,())),switch_expr((int),(()),ID(var1,char,()),case(CHAR(97),INT(97)),case(CHAR(98),INT(98)),case(CHAR(99),INT(99)),case(pattern_any,INT(100))))
+			)
+		)
+
+	)
+)

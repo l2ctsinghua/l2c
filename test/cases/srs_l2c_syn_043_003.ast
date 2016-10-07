@@ -1,0 +1,22 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		node
+		(
+			function,
+			fun1,
+			params( ),
+			returns(var_decls(vars(Output1),construct(field(label1,construct(field(label1,array(int,INT(2 )))))))),
+			body
+			(
+				localvars(var_decls(vars(_L1),construct(field(label1,construct(field(label1,array(int,INT(2 ))))))),var_decls(vars(_L2),construct(field(label1,construct(field(label1,array(int,INT(2 ))))))),var_decls(vars(_L3),int)),
+				=(lvalue(ID(_L1,construct(field(label1,construct(field(label1,array(int,INT(2 )))))),())),construct(construct(field(label1,construct(field(label1,array(int,INT(2 )))))),(),label_expr(label1,construct(construct(field(label1,array(int,INT(2 )))),(),label_expr(label1,construct_array(array(int,INT(2 )),(),list_expr(INT(2),INT(3)))),)),))
+,				=(lvalue(ID(_L2,construct(field(label1,construct(field(label1,array(int,INT(2 )))))),())),mixed_constructor(construct(field(label1,construct(field(label1,array(int,INT(2 )))))),(),ID(_L1,construct(field(label1,construct(field(label1,array(int,INT(2 )))))),()),(struct_item(label1),struct_item(label1),INT(0)),ID(_L3,int,())))
+,				=(lvalue(ID(_L3,int,())),INT(0))
+,				=(lvalue(ID(Output1,construct(field(label1,construct(field(label1,array(int,INT(2 )))))),())),ID(_L2,construct(field(label1,construct(field(label1,array(int,INT(2 )))))),()))
+			)
+		)
+
+	)
+)

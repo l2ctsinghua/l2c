@@ -1,0 +1,30 @@
+TopLevel(
+	main(fun1),
+	program
+	(
+		const_block
+		(
+			const(Constant1,typename(Type1),construct_array(construct_array(CHAR(97),CHAR(98)),construct_array(CHAR(99),CHAR(100)),construct_array(CHAR(101),CHAR(102))))
+		),
+		type_block
+		(
+			type(Type1,array(array(char,INT(2 )),INT(3 )))
+		),
+		node
+		(
+			function,
+			fun1,
+			params( ),
+			returns(var_decls(vars(Output1),array(array(char,INT(2 )),INT(3 ))),var_decls(vars(Output2),typename(Type1))),
+			body
+			(
+				localvars(var_decls(vars(_L1),array(array(char,INT(2 )),INT(3 ))),var_decls(vars(_L2),typename(Type1))),
+				=(lvalue(ID(_L1,array(array(char,INT(2 )),INT(3 )),())),construct_array(array(array(char,INT(2 )),INT(3 )),(),list_expr(construct_array(array(char,INT(2 )),(),list_expr(CHAR(97),CHAR(98))),construct_array(array(char,INT(2 )),(),list_expr(CHAR(99),CHAR(100))),construct_array(array(char,INT(2 )),(),list_expr(CHAR(101),CHAR(102))))))
+,				=(lvalue(ID(_L2,array(array(char,INT(2 )),INT(3 )),())),ID(Constant1,array(array(char,INT(2 )),INT(3 )),()))
+,				=(lvalue(ID(Output2,array(array(char,INT(2 )),INT(3 )),())),ID(_L1,array(array(char,INT(2 )),INT(3 )),()))
+,				=(lvalue(ID(Output1,array(array(char,INT(2 )),INT(3 )),())),ID(_L2,array(array(char,INT(2 )),INT(3 )),()))
+			)
+		)
+
+	)
+)
