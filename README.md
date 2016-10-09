@@ -2,10 +2,14 @@
 
 ---
 
+Version 0.8
+
 ##Introduction
 
 The goal of L2C project is to build a compiler to implement formally certified tranlation from a **Lustre**-like synchronous data-flow language which totally covers **Lustre V6** to **Clight**.
-The latest open source version of L2C has completed the certified translation from a mono-clocked Lustre-like language to Clight. Next we will open the nested-clocked version.
+This open source version of L2C has completed the certified translation from a mono-clocked Lustre-like language to Clight. Next we will open the nested-clocked version.
+
+
 
 > ####Nouns Explaination
 >> #####Lustre
@@ -14,6 +18,11 @@ Lustre is a formally defined, declarative, and synchronous dataflow programming 
 Lustre V6 is a stable and popular version of Lustre programming language. see http://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v6/
 >> #####Clight
 Clight is a large subset of C programming language used in CompCert which is an existing formally certified compiler from Clight to assembly. see http://compcert.inria.fr
+
+> ####Framework
+>> The framework of L2C is shown below. This open source version complete the formally certified translation from Well-typed Lustre* AST to Clight as the red box covers.<br/><br/>
+![](framework.png)
+
 
 ---
 ## Get Started
