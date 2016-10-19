@@ -12,7 +12,7 @@ for f in $files
 do
     name=`echo $f | cut -d'/' -f 3 | cut -d'.' -f 1`;
     echo $f;
-    rm -r result/$name;
+    rm -rf result/$name;
     mkdir result/$name;
     ../l2c -target_dir result/$name $f;
 done
