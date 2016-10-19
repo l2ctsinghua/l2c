@@ -132,6 +132,8 @@ clean-all: clean
 	rm -f compcert/common/*.vo compcert/common/*.glob
 	rm -f compcert/lib/*.vo compcert/lib/*.glob
 	rm -f compcert/ia32/*.vo compcert/ia32/*.glob
+	rm -f compcert/flocq/**/*.vo compcert/flocq/**/*.glob
+	rm -r test/result
 	rm -f .depend
 
 # Install l2c to ~/bin
