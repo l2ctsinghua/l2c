@@ -11,15 +11,15 @@ This open source version of L2C has completed the certified translation from a m
 
 
 
-> ####Nouns Explaination
->> #####Lustre
+> #### Nouns Explaination
+>> ##### Lustre
 Lustre is a formally defined, declarative, and synchronous dataflow programming language, for programming reactive systems. see http://en.wikipedia.org/wiki/Lustre_(programming_language)
->> #####Lustre V6
+>> ##### Lustre V6
 Lustre V6 is a stable and popular version of Lustre programming language. see http://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v6/
->> #####Clight
+>> ##### Clight
 Clight is a large subset of C programming language used in CompCert which is an existing formally certified compiler from Clight to assembly. see http://compcert.inria.fr
 
-> ####Framework
+> #### Framework
 >> The framework of L2C is shown below. This open source version complete the formally certified translation from Well-typed Lustre* AST to Clight as the red box covers.<br/><br/>
 ![](framework.png)
 
@@ -27,24 +27,24 @@ Clight is a large subset of C programming language used in CompCert which is an 
 ---
 ## Get Started
 
-> ####Environment:
+> #### Environment:
 
 - The Coq Proof Assistant, version 8.4pl3 (July 2015)
 - The Objective Caml compiler, version 4.02.1
 - Pproofgeneral 4.2
 
-> ####Installation:
+> #### Installation:
 
 - make
 - make install (**option**)
 -- install l2c to ~/bin
 
-> ####Test
+> #### Test
 
 - make test
 -- compile ast files into c files
 
-> ####Uninstallation
+> #### Uninstallation
 
 - make uninstall
 -- remove ~/bin
