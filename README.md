@@ -4,7 +4,7 @@
 
 Version 0.8
 
-##Introduction
+## Introduction
 
 The goal of L2C project is to build a compiler to implement formally certified tranlation from a **Lustre**-like synchronous data-flow language which totally covers **Lustre V6** to **Clight**.
 This open source version of L2C has completed the certified translation from a mono-clocked Lustre-like language to Clight. Next we will open the nested-clocked version.
@@ -71,6 +71,6 @@ l2c [options] <source.ast>
 >	**-help**:			Print this usage message
 
 ---
-##Website
+## Website
 
 More Details, see http://soft.cs.tsinghua.edu.cn:8000/
